@@ -1,4 +1,4 @@
-# @ravi-khatri/ui-kit
+# rk-uitk
 
 > A production-grade React component library with zero runtime dependencies, vanilla CSS Modules, full TypeScript support, and Storybook documentation.
 
@@ -15,7 +15,7 @@
 ## Installation
 
 ```bash
-npm install @ravi-khatri/ui-kit
+npm install rk-uitk
 ```
 
 **Peer dependencies:**
@@ -29,8 +29,8 @@ npm install react react-dom
 ## Quick Start
 
 ```tsx
-import { Button, Input, Badge, ThemeProvider } from '@ravi-khatri/ui-kit';
-import '@ravi-khatri/ui-kit/styles';
+import { Button, Input, Badge, ThemeProvider } from 'rk-uitk';
+import 'rk-uitk/styles';
 
 function App() {
   return (
@@ -123,7 +123,7 @@ function App() {
 Uses `ToastProvider` and `useToast` hook:
 
 ```tsx
-import { ToastProvider, useToast } from '@ravi-khatri/ui-kit';
+import { ToastProvider, useToast } from 'rk-uitk';
 
 // Wrap your app
 <ToastProvider>
@@ -166,7 +166,7 @@ addToast({ message: 'Saved!', variant: 'success', duration: 3000 });
 Wrap your app with `ThemeProvider` to override design tokens:
 
 ```tsx
-import { ThemeProvider } from '@ravi-khatri/ui-kit';
+import { ThemeProvider } from 'rk-uitk';
 
 <ThemeProvider theme={{ 'color-primary-600': '#8b5cf6' }}>
   <App />
@@ -176,7 +176,7 @@ import { ThemeProvider } from '@ravi-khatri/ui-kit';
 Use the `useTheme` hook to read current values:
 
 ```tsx
-import { useTheme } from '@ravi-khatri/ui-kit';
+import { useTheme } from 'rk-uitk';
 const theme = useTheme();
 ```
 
