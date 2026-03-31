@@ -1,0 +1,161 @@
+/* ============================================
+   Design Tokens — CSS Custom Properties
+   ============================================ */
+
+:root {
+  /* ---- Colors: Primary (#0041A8) ---- */
+  --color-primary-light: hsl(214, 100%, 90%);
+  --color-primary: hsl(214, 100%, 33%);
+  --color-primary-dark: hsl(214, 100%, 23%);
+
+  /* ---- Colors: Secondary (#6A6BD5) ---- */
+  --color-secondary-light: hsl(240, 52%, 90%);
+  --color-secondary: hsl(240, 52%, 62%);
+  --color-secondary-dark: hsl(240, 52%, 42%);
+
+  /* ---- Colors: Danger ---- */
+  --color-danger-light: hsl(0, 84%, 92%);
+  --color-danger: hsl(0, 72%, 51%);
+  --color-danger-dark: hsl(0, 72%, 38%);
+
+  /* ---- Colors: Success ---- */
+  --color-success-light: hsl(145, 63%, 90%);
+  --color-success: hsl(145, 63%, 42%);
+  --color-success-dark: hsl(145, 63%, 30%);
+
+  /* ---- Colors: Warning ---- */
+  --color-warning-light: hsl(40, 96%, 90%);
+  --color-warning: hsl(40, 96%, 53%);
+  --color-warning-dark: hsl(40, 96%, 40%);
+
+  /* ---- Colors: Neutral ---- */
+  --color-neutral-light: hsl(0, 0%, 96%);
+  --color-neutral-mlight: hsl(0, 0%, 86%);
+  --color-neutral: hsl(0, 0%, 55%);
+  --color-neutral-mdark: hsl(0, 0%, 35%);
+  --color-neutral-dark: hsl(0, 0%, 15%);
+
+  /* ---- Colors: Base ---- */
+  --color-white: hsl(0, 0%, 98%);
+  --color-black: hsl(0, 0%, 10%);
+
+  /* ---- Typography ---- */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* 12px */
+  --font-size-xs: 0.75rem;
+  /* 14px */
+  --font-size-sm: 0.875rem;
+  /* 16px */
+  --font-size-md: 1rem;
+  /* 18px */
+  --font-size-lg: 1.125rem;
+  /* 20px */
+  --font-size-xl: 1.25rem;
+  /* 24px */
+  --font-size-2xl: 1.5rem;
+  /* 30px */
+  --font-size-3xl: 1.875rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ---- Spacing ---- */
+  /* 2px */
+  --spacing-2xs: 0.125rem;
+  /* 4px */
+  --spacing-xs: 0.25rem;
+  /* 8px */
+  --spacing-sm: 0.5rem;
+  /* 16px */
+  --spacing-md: 1rem;
+  /* 24px */
+  --spacing-lg: 1.5rem;
+  /* 32px */
+  --spacing-xl: 2rem;
+  /* 48px */
+  --spacing-2xl: 3rem;
+
+  /* ---- Border Radius ---- */
+  /* 4px */
+  --radius-sm: 0.25rem;
+  /* 8px */
+  --radius-md: 0.5rem;
+  /* 12px */
+  --radius-lg: 0.75rem;
+  /* full */
+  --radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+  --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+  --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+
+  /* ---- Transitions ---- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  /* ---- Z-Index Scale ---- */
+  --z-dropdown: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+  --z-tooltip: 400;
+
+  /* ---- Focus Ring ---- */
+  --focus-ring: 0 0 0 3px var(--color-primary-light);
+}
+
+/* ============================================
+   Dark Mode Overrides
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Primary — flip light ↔ dark */
+    --color-primary-light: hsl(214, 100%, 23%);
+    --color-primary: hsl(214, 80%, 60%);
+    --color-primary-dark: hsl(214, 100%, 90%);
+
+    /* Secondary */
+    --color-secondary-light: hsl(240, 52%, 25%);
+    --color-secondary: hsl(240, 52%, 68%);
+    --color-secondary-dark: hsl(240, 52%, 90%);
+
+    /* Danger */
+    --color-danger-light: hsl(0, 72%, 20%);
+    --color-danger: hsl(0, 72%, 60%);
+    --color-danger-dark: hsl(0, 84%, 92%);
+
+    /* Success */
+    --color-success-light: hsl(145, 63%, 18%);
+    --color-success: hsl(145, 63%, 55%);
+    --color-success-dark: hsl(145, 63%, 90%);
+
+    /* Warning */
+    --color-warning-light: hsl(40, 96%, 18%);
+    --color-warning: hsl(40, 96%, 60%);
+    --color-warning-dark: hsl(40, 96%, 90%);
+
+    /* Neutral — flip light ↔ dark */
+    --color-neutral-light: hsl(0, 0%, 15%);
+    --color-neutral-mlight: hsl(0, 0%, 25%);
+    --color-neutral: hsl(0, 0%, 55%);
+    --color-neutral-mdark: hsl(0, 0%, 80%);
+    --color-neutral-dark: hsl(0, 0%, 93%);
+
+    /* Base — inverted */
+    --color-white: hsl(0, 0%, 12%);
+    --color-black: hsl(0, 0%, 93%);
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -4px hsl(0 0% 0% / 0.3);
+  }
+}

@@ -1,0 +1,86 @@
+/* Table component styles */
+
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--color-neutral-mlight);
+  border-radius: var(--radius-md);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+}
+
+/* ---- Header ---- */
+
+.headerCell {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-mdark);
+  background-color: var(--color-neutral-light);
+  border-bottom: 2px solid var(--color-neutral-mlight);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.headerCell--sortable {
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.headerCell--sortable:hover {
+  color: var(--color-primary);
+}
+
+.sortIndicator {
+  display: inline-block;
+  margin-left: var(--spacing-xs);
+  font-size: var(--font-size-xs);
+  color: var(--color-neutral);
+}
+
+.sortIndicator--active {
+  color: var(--color-primary);
+}
+
+/* ---- Body ---- */
+
+.cell {
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--color-neutral-mdark);
+  border-bottom: 1px solid var(--color-neutral-light);
+}
+
+.row:last-child .cell {
+  border-bottom: none;
+}
+
+/* ---- Striped ---- */
+
+.row--striped:nth-child(even) {
+  background-color: var(--color-neutral-light);
+}
+
+/* ---- Loading skeleton ---- */
+
+.skeleton {
+  height: 1rem;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(
+    90deg,
+    var(--color-neutral-light) 25%,
+    var(--color-neutral-mlight) 50%,
+    var(--color-neutral-light) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

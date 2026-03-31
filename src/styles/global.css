@@ -1,0 +1,15 @@
+/* ============================================
+   Global Styles — Base body defaults
+   ============================================ */
+
+@import './tokens.css';
+@import './reset.css';
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-neutral-dark);
+  background-color: var(--color-white);
+}
