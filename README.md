@@ -6,7 +6,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript&logoColor=white)
 ![CSS Modules](https://img.shields.io/badge/CSS-Modules-1572B6?logo=css3&logoColor=white)
 ![Storybook](https://img.shields.io/badge/Storybook-8-FF4785?logo=storybook&logoColor=white)
-![Vitest](https://img.shields.io/badge/Vitest-Tested-6E9F18?logo=vitest&logoColor=white)
 ![Bundle Size](https://img.shields.io/badge/Bundle-<10KB_gzip-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
@@ -203,9 +202,6 @@ npm install
 # Run Storybook
 npm run storybook
 
-# Run tests
-npm run test
-
 # Build the library
 npm run build
 
@@ -219,13 +215,12 @@ npm run size
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/my-component`
-3. Write your component with CSS Module, tests, and stories
-4. Ensure all tests pass: `npm run test`
-5. Build and verify: `npm run build && npm run size`
-6. Submit a pull request
+3. Write your component with CSS Module and stories
+4. Build and verify: `npm run build && npm run size`
+5. Submit a pull request
 
 ---
 
 ## License
 
-MIT © [Ravi Khatri](https://github.com/ravi-khatri)
+MIT © [Ravi Khatri](https://github.com/th3-raX)

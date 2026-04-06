@@ -62,6 +62,11 @@
     "css-modules"
   ],
   "license": "MIT",
+  "author": "Ravi Khatri",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/th3-raX/rk-uitk.git"
+  },
   "sideEffects": [
     "**/*.css"
   ]
