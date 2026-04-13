@@ -54,6 +54,7 @@
     }
   ],
   "keywords": [
+    "rk-uitk",
     "react",
     "component-library",
     "design-system",
@@ -65,7 +66,7 @@
   "author": "Ravi Khatri",
   "repository": {
     "type": "git",
-    "url": "https://github.com/th3-raX/rk-uitk.git"
+    "url": "git+https://github.com/th3-raX/rk-uitk.git"
   },
   "sideEffects": [
     "**/*.css"
